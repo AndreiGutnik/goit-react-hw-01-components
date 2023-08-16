@@ -1,0 +1,25 @@
+.status{
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: rgb(222, 87, 87);
+}
+
+.isOnline{
+	background-color: rgb(83, 226, 142);
+}
+
+.avatar{
+	width: 76px;
+	height: 76px;
+	border: 1px solid #b4b4b4;
+  border-radius: 18px;
+}
+
+.name {
+	width: 260px;
+	font-size: 28px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.96px;	
+}
