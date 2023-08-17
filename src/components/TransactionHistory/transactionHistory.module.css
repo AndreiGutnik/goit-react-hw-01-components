@@ -19,7 +19,8 @@ tr:nth-child(2n) {
   background-color: #d9d7d7eb;
 }
 
-td {
+td,
+th {
   border: 1px solid #9d9c9c;
 }
 
