@@ -8,9 +8,7 @@ export function Statistics({ title, stats }) {
       {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.stat_list}>
         {stats.map(stat => (
-          <li className={css.item} key={stat.id}>
-            <StatisticItem stats={stat} />
-          </li>
+          <StatisticItem key={stat.id} stats={stat} />
         ))}
       </ul>
     </section>
@@ -18,7 +16,7 @@ export function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

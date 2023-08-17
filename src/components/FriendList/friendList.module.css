@@ -1,25 +1,12 @@
-.friend_list{
-	width: 400px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	margin: 24px auto 0 auto;
-	border: 1px solid #000000;
+.friend_list {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 24px auto 0 auto;
+  border: 1px solid #000000;
   border-radius: 18px;
   box-shadow: 3px 3px 10px black;
-	padding: 10px;
-}
-
-.item{
-	width: 380px;
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 12px;
-	border: 1px solid #000000;
-  border-radius: 18px;
-  box-shadow: 3px 3px 10px black;
-	padding: 12px;
+  padding: 10px;
 }

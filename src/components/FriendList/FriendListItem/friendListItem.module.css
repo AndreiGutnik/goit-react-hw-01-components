@@ -1,25 +1,38 @@
-.status{
-	width: 28px;
-	height: 28px;
-	border-radius: 50%;
-	background-color: rgb(222, 87, 87);
+.item {
+  width: 380px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #000000;
+  border-radius: 18px;
+  box-shadow: 3px 3px 10px black;
+  padding: 12px;
 }
 
-.isOnline{
-	background-color: rgb(83, 226, 142);
+.status {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgb(222, 87, 87);
 }
 
-.avatar{
-	width: 76px;
-	height: 76px;
-	border: 1px solid #b4b4b4;
+.isOnline {
+  background-color: rgb(83, 226, 142);
+}
+
+.avatar {
+  width: 76px;
+  height: 76px;
+  border: 1px solid #b4b4b4;
   border-radius: 18px;
 }
 
 .name {
-	width: 260px;
-	font-size: 28px;
+  width: 260px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: -0.96px;	
+  letter-spacing: -0.96px;
 }

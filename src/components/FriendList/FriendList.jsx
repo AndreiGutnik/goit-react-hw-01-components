@@ -4,15 +4,16 @@ import css from './friendList.module.css';
 
 export function FriendList({ friends }) {
   return (
-    <>
-      <ul className={css.friend_list}>
-        {friends.map(friend => (
-          <li className={css.item} key={friend.id}>
-            <FriendListItem friends={friend} />
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className={css.friend_list}>
+      {friends.map(({ id, name, avatar, isOnline }) => (
+        <FriendListItem
+          key={id}
+          name={name}
+          avatar={avatar}
+          isOnline={isOnline}
+        />
+      ))}
+    </ul>
   );
 }
 
@@ -20,6 +21,9 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      avatar: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
     }).isRequired
   ).isRequired,
 };

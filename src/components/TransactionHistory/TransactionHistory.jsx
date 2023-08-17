@@ -14,9 +14,7 @@ export function TransactionHistory({ items }) {
       </thead>
       <tbody>
         {items.map(item => (
-          <tr key={item.id}>
-            <Transaction items={item} />
-          </tr>
+          <Transaction key={item.id} items={item} />
         ))}
       </tbody>
     </table>
