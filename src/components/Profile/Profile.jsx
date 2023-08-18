@@ -1,5 +1,14 @@
 import PropTypes from 'prop-types';
-import css from './profile.module.css'
+import {
+  Name,
+  Avatar,
+  Desctiption,
+  Wrapper,
+  Text,
+  StatsList,
+  StatItem,
+  Quantity,
+} from './Profile.styled';
 
 export function Profile({
   username,
@@ -9,29 +18,29 @@ export function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>{tag}</p>
-        <p className={css.location}>{location}</p>
-      </div>
+    <Wrapper>
+      <Desctiption>
+        <Avatar src={avatar} alt="User avatar" />
+        <Name>{username}</Name>
+        <Text>{tag}</Text>
+        <Text>{location}</Text>
+      </Desctiption>
 
-			<ul className={css.stats}>
-        <li>
-					<span className={css.label}>Followers</span>
-					<span className={css.quantity}>{followers}</span>
-        </li>
-        <li>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <StatsList>
+        <StatItem>
+          <span>Followers</span>
+          <Quantity>{followers}</Quantity>
+        </StatItem>
+        <StatItem>
+          <span>Views</span>
+          <Quantity>{views}</Quantity>
+        </StatItem>
+        <StatItem>
+          <span>Likes</span>
+          <Quantity>{likes}</Quantity>
+        </StatItem>
+      </StatsList>
+    </Wrapper>
   );
 }
 
